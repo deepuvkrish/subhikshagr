@@ -25,6 +25,7 @@ body {
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 /* Media Query */
 @media (max-width: 1380px) {
@@ -32,5 +33,13 @@ body {
   body {
     font-size: rem;
     line-height: normal;
+  }
+}
+@media (max-width: 786px) {
+  html,
+  body {
+    font-size: rem;
+    line-height: normal;
+    overflow-x: hidden;
   }
 }

@@ -90,7 +90,16 @@
 }
 
 /* Media Query */
+@media (min-width: 1380px) {
+  .lap-version{
+    display: none;
+  }
+  .mob-version{
+    display: block;
+  }
+}
 @media (max-width: 1380px) {
+  
   .greeting-text {
     font-size: 40px;
   }
@@ -99,6 +108,12 @@
   }
 }
 @media (max-width: 768px) {
+  .lap-version{
+    display: none;
+  }
+  .mob-version{
+    display: block;
+  } 
   .button-greeting-div {
     justify-content: space-around;
   }
