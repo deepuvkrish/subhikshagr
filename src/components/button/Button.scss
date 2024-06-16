@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
+  background-image: linear-gradient(45deg, #55198b, #f756ff);
   border: solid 1px $buttonColor;
   color: $textColorDark;
   font-weight: 700;
@@ -14,7 +14,7 @@
   text-decoration: none;
   display: block;
   margin-top: 20px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }

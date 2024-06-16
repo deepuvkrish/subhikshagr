@@ -45,7 +45,7 @@
 
 .greeting-text-p {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 30px;
 }
 .greeting-image-div{
   display: flex;
@@ -92,10 +92,10 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 40px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media (max-width: 768px) {
