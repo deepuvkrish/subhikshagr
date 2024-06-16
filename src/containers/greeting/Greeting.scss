@@ -91,12 +91,7 @@
 
 /* Media Query */
 @media (min-width: 1380px) {
-  .lap-version{
-    display: none;
-  }
-  .mob-version{
-    display: block;
-  }
+
   .greeting-image-div {
     height: 100%;
   }
@@ -110,6 +105,15 @@
     font-size: 16px;
   }
 }
+@media (min-width: 768px) {
+  .lap-version{
+    display: block;
+  }
+  .mob-version{
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .lap-version{
     display: none;

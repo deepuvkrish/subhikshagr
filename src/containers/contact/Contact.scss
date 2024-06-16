@@ -106,13 +106,28 @@
     
   }
   .lotte-contact{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: relative;
     left: 30%;
   }
-  .lotte-contact svg{
+  .lotte-contact-mob{
+    display: none;
+  }
+  .lotte-contact-mob svg{
     width:40% !important;
+  }
+}
+@media (min-width: 786px){
+  .lotte-contact-mob{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 30%;
+  }
+  .contact-image-div{
+    display: block;
   }
 }

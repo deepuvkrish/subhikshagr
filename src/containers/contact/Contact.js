@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="contact-div-main">
 
           <div className="contact-header">
-            <div className="lotte-contact">
+            <div className="lotte-contact-mob">
               {illustration.animated ? (
                 <DisplayLottie animationData={greenconsultation} />
               ) : (
