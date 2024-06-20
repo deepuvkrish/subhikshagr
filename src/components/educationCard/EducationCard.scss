@@ -61,7 +61,11 @@
 }
 
 .education-card-right {
-  max-width: 70%;
+  width: 70%;
+}
+.education-card-left{
+  display: flex;
+  align-items: center;
 }
 
 .education-text-subHeader {
@@ -126,10 +130,7 @@
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
-  .education-card-left{
-    display: flex;
-    align-items: center;
-  }
+  
   .education-text-desc {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
