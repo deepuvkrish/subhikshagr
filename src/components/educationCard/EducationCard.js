@@ -11,9 +11,12 @@ export default function EducationCard({ school }) {
   const GetDescBullets = ({ descBullets }) => {
     return descBullets
       ? descBullets.map((item, i) => (
-        <li key={i} className="edu-desc edu-list">
-          <Icon icon="meteocons:pressure-low-fill" width="2em" height="2em" />{item}
-        </li>
+        <div className="ul-list">
+          <Icon icon="meteocons:pressure-low-fill" width="2em" height="2em" />
+          <li li key={i} className="edu-desc edu-list" >
+            {item}
+          </li>
+        </div>
       ))
       : null;
   };
@@ -57,11 +60,12 @@ export default function EducationCard({ school }) {
                 {school.duration}
               </p>
               <p className="education-text-desc">{school.desc} <span className="cgpa-details">{school.cgpa}</span></p>
-              <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
-              </div>
+            </div>
+            <div className="education-text-bullets">
+              <ul>
+
+                <GetDescBullets descBullets={school.descBullets} />
+              </ul>
             </div>
           </div>
         </div>

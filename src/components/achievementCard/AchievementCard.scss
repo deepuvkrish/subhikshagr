@@ -1,21 +1,63 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
+
+@media only screen and (max-width:678px){
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    width: 110px;
+  }
+  .card-title {
+    color: #000000;
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin:  0;
+  }
+  .card-subtitle {
+    color: #666666;
+    font-size: 1.063rem;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+  .certificate-image-div {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.card-title {
-  color: $titleColor;
-  font-size: 1.375rem;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
+
 }
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: 1.063rem;
-  line-height: 1.5rem;
+
+@media only screen and (min-width:678px){
+  .card-image {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+  }
+  .card-title {
+    color: $titleColor;
+    font-size: 1.375rem;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+  }
+  .card-subtitle {
+    color: $cardSubtitle;
+    font-size: 1.063rem;
+    line-height: 1.5rem;
+  }
+  .certificate-image-div {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .certificate-card {
   background-color: $lightBackground2;
@@ -36,14 +78,7 @@
 .dark-mode.certificate-card:hover {
   box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
 }
-.certificate-image-div {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .achievement-cards-div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -56,8 +91,8 @@
   justify-content: center;
 }
 .certificate-card-footer span.certificate-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
+  background-image:linear-gradient(45deg, #7dee8a, #9ce4f4);
+  color: $blackcolor;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;

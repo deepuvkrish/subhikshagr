@@ -1,23 +1,8 @@
 @import "../../_globalColor";
 
-.skills-main-div {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
 
-.skills-text-div {
-  margin-left: 50px;
-  display: flex;
-  margin-left: 50px;
-  flex-direction: column;
-  justify-content: center;
-}
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
+
 
 .skills-image-div > img {
   max-width: 100%;
@@ -28,13 +13,10 @@
   font-size: 56px;
   font-weight: 400;
 }
-.subTitle {
-  color: $subTitle;
+.skill-name{
+  display: flex;
 }
-.skill-desc{
-  font-size: 14px;
-  font-family: monospace;
-}
+
 
 /* Media Query */
 @media (max-width: 1380px) {
@@ -42,31 +24,69 @@
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+
+@media only screen and (min-width: 768px) {
+  .subTitle {
+    color: $subTitle;
+  }
+  .skills-main-div {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .skills-text-div {
+    margin-left: 50px;
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills-main-div > * {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+  .skill-desc{
+    font-size: 14px;
+    font-family: monospace;
+  }
+}
+@media only screen and (max-width: 768px) {
   .skills-heading {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+    font-weight: 900;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal;
   }
   .skills-main-div {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
   }
   .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
+    width: 100%;
   }
   .skills-text {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .skill-desc{
+    font-size: 12px;
+    font-family: monospace;
   }
   .skills-text-subtitle {
     font-size: 16px;
     text-align: center;
   }
   .skills-image-div {
-    /* display: none; */
-    order: 2;
+   height: 200px;
+   width: 200px;
+  }
+  .subTitle {
+    color: $blackcolor !important;
   }
 }

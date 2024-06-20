@@ -6,6 +6,7 @@ import { Fade } from "react-reveal";
 import avatarman from "../../assets/lottie/uman.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import { Icon } from '@iconify/react';
 
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
@@ -34,7 +35,7 @@ export default function Skills() {
             >
               {skillsSection.title}{" "}
             </h1>
-            <p
+            {/* <p
               className={
                 isDark
                   ? "dark-mode subTitle skills-text-subtitle"
@@ -42,21 +43,24 @@ export default function Skills() {
               }
             >
               {skillsSection.subTitle}
-            </p>
+            </p> */}
             <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text skill-desc"
-                        : "subTitle skills-text skill-desc"
-                    }
-                  >
-                    {skills}
-                  </p>
+                  <div className="skill-name">
+                    <p className={"subTitle skills-text skill-desc"
+                    }>
+                      <Icon icon="meteocons:clear-day-fill" width="20px" height="20px" /> 
+                    </p>
+                    <p
+                      key={i}
+                      className={"subTitle skills-text skill-desc"
+                      }
+                    >
+                      {skills}
+                    </p>
+                  </div>
                 );
               })}
             </div>

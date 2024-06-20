@@ -1,7 +1,7 @@
-.education-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
+@import "../../_globalColor";
+
+
+
 
 .education-section {
   display: flex;
@@ -10,6 +10,19 @@
   padding: 20px 0px;
   margin: 0px auto;
   margin-top: 2rem;
+    color: #aeacbc;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    display: grid;
+    gap: 60px;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: inset -1px 0px 2px rgba(255, 255, 255, 0.25),
+      inset 0px 1px 2px rgba(255, 255, 255, 0.25),
+      inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03);
+    background-image: url("https://i.ibb.co/5RSd0Nk/whitenoise-361x370.png");
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .education-section > * {
@@ -36,15 +49,45 @@
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .education-section > * {
+    flex: 1 1;
+    margin-bottom: 0px;
+}
   .education-card-container {
     padding-top: 0px;
   }
+
+  .education-text-school {
+    font-size: 15px;
+    font-weight: 500;
+    color: $blueshade;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 27px;
+    width: 95%;
+    height: 60px;
+}
+
   .education-heading {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 900;
     text-align: center;
+    margin-bottom: 2em;
   }
   .education-text-subtitle {
     font-size: 16px;
+  }
+  .edu-desc {
+    font-size: 14px;
+    font-family: monospace;
+    color: $blackcolor;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .education-heading {
+    font-size: 56px;
+    font-weight: 400;
   }
 }

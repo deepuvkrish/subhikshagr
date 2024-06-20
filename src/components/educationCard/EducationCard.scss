@@ -3,11 +3,17 @@
 .education-card {
   display: flex;
   flex-direction: row;
+  background: conic-gradient(
+        from 180deg at 50% 50%,
+        rgba(255, 255, 255, 0.5) 0deg,
+        rgba(255, 255, 255, 0) 65.63deg,
+        rgba(255, 255, 255, 0) 123.75deg,
+        rgba(255, 255, 255, 0.5) 360deg
+      );
 }
-.edu-desc{
-  font-size: 14px;
-  font-family: monospace;
-  color: #fff;
+
+.ul-list{
+  display: flex;
 }
 .edu-list{
   display: flex;
@@ -39,15 +45,7 @@
   flex-direction: row;
 }
 
-.education-text-school {
-  margin-inline-start: 2em;
-  font-size: 28px;
-  font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 27px;
-}
+
 
 .education-roundedimg {
   object-fit: cover;
@@ -128,25 +126,86 @@
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .education-card {
     text-align: center;
   }
   .education-card-right {
     max-width: 100%;
   }
+  .education-card-left {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
   .education-card-border {
     width: 100%;
   }
   .education-roundedimg {
-    margin-top: 10px;
     width: 4rem;
     height: 4rem;
-    margin-bottom: 1rem;
     margin-right: 0;
+    object-fit: contain;
+  }
+  .education-text-details{
+    display: flex;
   }
   .education-text-bullets > ul {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
+    margin-block-start: 0em;
+    margin-inline-start: 0em;
+    padding-inline-start: 0em;
   }
+  .edu-desc{
+    font-size: 10px;
+    font-family: inherit;
+    color: $blackcolor;
+    width: 90%;
+    text-wrap:wrap;
+    text-overflow: ellipsis;
+    // white-space: nowrap;
+    overflow: hidden;
+    text-align: justify;
+  }
+  .education-text-duration {
+    font-size: 13px;
+  }
+  .edu-desc li svg{
+    margin-right: 10px;
+  }
+    .education-text-school {
+      font-size: 14px;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 95%;
+      height: 36px;
+      margin-block: 0em;
+  }
+  .education-text-subHeader {
+      padding-top: 0.5rem;
+      font-size: 13px;
+  }
+
 }
+
+@media only screen and (min-width: 768px) {
+
+  .edu-desc{
+    font-size: 14px;
+    font-family: monospace;
+    color: #fff;
+  }
+  .education-text-school {
+    margin-inline-start: 2em;
+    font-size: 28px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 27px;
+  }
+  
+}
+

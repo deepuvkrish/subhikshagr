@@ -1,24 +1,10 @@
 @import "../../_globalColor";
 
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
-.greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
+
+
 
 .greeting-main {
   display: flex;
-}
-
-.subTitle {
-  color: $subTitle !important;
 }
 
 .greeting-main {
@@ -106,15 +92,44 @@
   }
 }
 @media (min-width: 768px) {
+  .main {
+    width: 90%;
+    padding: 20px 10px;
+    margin: 0px auto;
+    margin-top: 4rem;
+  }
+  .greet-main {
+    width: 90%;
+    padding: 20px 10px;
+    margin: 0px auto;
+    margin-top: 2rem;
+  }
   .lap-version{
     display: block;
   }
   .mob-version{
     display: none;
   }
+  
+  .subTitle {
+    color: $subTitle !important;
+  }
+
 }
 
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+    padding: 20px 10px;
+    margin: 0px auto;
+    margin-top: 0.5rem;
+  }
+  .greet-main {
+    width: 95%;
+    padding: 10px 10px;
+    margin: 0px auto;
+  }
   .lap-version{
     display: none;
   }
@@ -125,7 +140,7 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
   }
   .greeting-text-p {
@@ -137,7 +152,10 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    display: none;
+  }
+  .subTitle {
+    color: $blackcolor !important;
   }
 }
 

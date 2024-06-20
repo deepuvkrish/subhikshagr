@@ -1,13 +1,6 @@
 @import "../../_globalColor";
 
-.dev-icons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
-}
+
 
 .software-skill-inline {
   display: inline-block;
@@ -32,3 +25,102 @@
 .software-skill-inline > i:hover ~ p {
   color: $pinkshade;
 }
+
+
+@media only screen and (max-width:768px){
+  .dev-icons-lap {
+    display: none;
+  }
+  .dev-icons-mob {
+    padding-left: 0;
+    list-style: none;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .logo-slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .logo-slider::before, .logo-slider::after {
+    content: "";
+    height: 175px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  .logo-slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+  .logo-slider::before {
+    left: 0;
+    top: 0;
+  }
+  .logo-slider .logo-slide-track {
+    -webkit-animation: logo-scroll 60s linear infinite;
+    animation: logo-scroll 60s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  .logo-slider .slide {
+    height: 60px;
+    width: 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @-webkit-keyframes logo-scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(250px);
+      transform: translateX(calc(250px));
+    }
+  }
+  
+@keyframes logo-scroll {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(calc(250px));
+		transform: translateX(calc(250px));
+	}
+}
+
+
+}
+@media only screen and (min-width:768px){
+
+  .dev-icons-lap {
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .dev-icons-mob {
+    display: none;
+  }
+
+}
+

@@ -48,11 +48,11 @@ const skillsSection = {
   subTitle: "",
   skills: [
     emoji(
-      "⚡Conduct research and analysis in order to come up with solutions to business problems"
+      "Conduct research and analysis in order to come up with solutions to business problems"
     ),
-    emoji("⚡Help an organisation achieve its goals by analysing data, assessing processes and systems, creating solutions and planning for the future"),
+    emoji("Help an organisation achieve its goals by analysing data, assessing processes and systems, creating solutions and planning for the future"),
     emoji(
-      "⚡ Perform, evaluate, and communicate thorough quality assurance at every stage of systems development"
+      "Perform, evaluate, and communicate thorough quality assurance at every stage of systems development"
     )
   ],
   softwareSkills: [
@@ -97,7 +97,7 @@ const educationInfo = {
     {
       schoolName: "Velalar College of Engineering and Technology",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Bachelor of Engineering in Civil Engineering",
+      subHeader: "B.E in Civil Engineering",
       duration: "May 2018 - April 2022",
       desc: "Secured overall",
       cgpa: "8.8 CGPA",
@@ -118,8 +118,8 @@ const educationInfo = {
     {
       schoolName: "BVB Matric Hr Sec School",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Higher School",
-      duration: "May 2016",
+      subHeader: "High School Matriculation",
+      duration: "Jun 2006 - May 2016",
       desc: "Secured Overall",
       cgpa: "67%"
     }

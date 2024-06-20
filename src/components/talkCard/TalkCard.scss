@@ -83,7 +83,7 @@
     font-size: 25px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .mask {
     clip-path: none;
     position: relative;
@@ -93,6 +93,9 @@
   }
   .talk-card-image {
     width: 100%;
+  }
+  .card-title {
+    font-size: 14px;
   }
 
   .talk-button {
@@ -121,5 +124,11 @@
     width: 100%;
     height: auto;
     padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-title {
+    font-size: 25px;
   }
 }
