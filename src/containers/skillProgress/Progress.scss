@@ -3,7 +3,7 @@
 .meter {
   height: 20px;
   position: relative;
-  background: $progressBarBackground;
+  background: rgb(108 108 108 / 14%);
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
@@ -15,7 +15,7 @@
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
+  background-image: linear-gradient(45deg, #7dee8a, #9ce4f4, #f9d1e6);
   position: relative;
   overflow: hidden;
 }
@@ -50,7 +50,7 @@
     line-height: 4rem;
   }
   .skills-image {
-    display: none;
+    display: block;
     order: 2;
   }
 }

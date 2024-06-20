@@ -21,14 +21,14 @@
 }
 
 .software-skill-inline > i:hover {
-  color: rgb(182, 110, 255);
+  color: $greenshade;
   transform: scale(1.3);
 }
 .software-skill-inline > p {
-  color: rgb(193, 193, 193);
+  color: $blueshade;
   font-size: 10px;
   transition: 500ms;
 }
 .software-skill-inline > i:hover ~ p {
-  color: gold;
+  color: $pinkshade;
 }

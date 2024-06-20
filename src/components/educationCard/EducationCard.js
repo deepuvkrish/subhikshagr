@@ -34,10 +34,11 @@ export default function EducationCard({ school }) {
                 src={school.logo}
                 alt={school.schoolName}
               />
+              <h5 className="education-text-school">{school.schoolName}</h5>
+
             </div>
           )}
           <div className="education-card-right">
-            <h5 className="education-text-school">{school.schoolName}</h5>
 
             <div className="education-text-details">
               <h5
@@ -55,7 +56,7 @@ export default function EducationCard({ school }) {
               >
                 {school.duration}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
+              <p className="education-text-desc">{school.desc} <span className="cgpa-details">{school.cgpa}</span></p>
               <div className="education-text-bullets">
                 <ul>
                   <GetDescBullets descBullets={school.descBullets} />

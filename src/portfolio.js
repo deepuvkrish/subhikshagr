@@ -99,7 +99,8 @@ const educationInfo = {
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Bachelor of Engineering in Civil Engineering",
       duration: "May 2018 - April 2022",
-      desc: "Secured overall 8.8 CGPA",
+      desc: "Secured overall",
+      cgpa: "8.8 CGPA",
       descBullets: [
         "Design Project on Planning, Designing, Analyzing and Estimation of Inn Building",
         "Real time model of Ferro-cement Water tank",
@@ -111,14 +112,16 @@ const educationInfo = {
       logo: require("./assets/images/ssvm.png"),
       subHeader: "Higher Secondary in PCMB",
       duration: "May 2016 - April 2018",
-      desc: "Secured overall 94%"
+      desc: "Secured overall",
+      cgpa: "94%"
     },
     {
       schoolName: "BVB Matric Hr Sec School",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Higher School",
       duration: "May 2016",
-      desc: "Secured Overall 67%"
+      desc: "Secured Overall",
+      cgpa: "67%"
     }
   ]
 };
@@ -158,19 +161,9 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+
     {
-      color: "rgb(204, 28, 35)",
-      role: "Junior Business Analyst",
-      company: "Pratian Technologies",
-      companylogo: require("./assets/images/pratian.png"),
-      date: "June 2018 – Present",
-      desc: "Assisted Recruiter departments and managed with staff to improve client satisfaction",
-      descBullets: [
-        "JobCheck",
-      ]
-    },
-    {
-      color: "rgb(25 68 138)",
+      color: "#7dee8a",
       role: "Junior Site Engineer",
       company: "Shree Venkateswara Private Limited",
       companylogo: require("./assets/images/venki.jpg"),
@@ -179,6 +172,17 @@ const workExperiences = {
         "Maritime Rescue Coordination Centre",
       ]
     },
+    {
+      color: "#9ce4f4",
+      role: "Junior Business Analyst",
+      company: "Pratian Technologies",
+      companylogo: require("./assets/images/pratian.png"),
+      date: "June 2018 – Present",
+      desc: "Assisted Recruiter departments and managed with staff to improve client satisfaction",
+      descBullets: [
+        "JobCheck",
+      ]
+    }
 
   ]
 };

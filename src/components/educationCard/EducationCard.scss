@@ -40,7 +40,7 @@
 }
 
 .education-text-school {
-  margin: 0;
+  margin-inline-start: 2em;
   font-size: 28px;
   font-weight: 700;
   text-overflow: ellipsis;
@@ -81,8 +81,13 @@
 .education-text-desc {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  font-size: 14px;
 }
 
+.cgpa-details{
+  color: $greenshade;
+  font-weight: 900;
+}
 .education-text-bullets > ul {
   margin-top: 0.5rem;
 }
@@ -116,6 +121,10 @@
     height: 4rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
+  }
+  .education-card-left{
+    display: flex;
+    align-items: center;
   }
 }
 
