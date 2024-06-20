@@ -1,6 +1,17 @@
 import React from "react";
 import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
+import { illustration } from "../../portfolio";
+import DisplayLottie from "../displayLottie/DisplayLottie";
+import linkedinlotte from '../../assets/lottie/linkedin.json'
+import { Icon } from '@iconify/react';
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { } from '@fortawesome/free-brands-svg-icons';
+import { faAt } from '@fortawesome/free-solid-svg-icons';
+import { } from '@fortawesome/free-regular-svg-icons';
+
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -15,7 +26,9 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-github"></i>
+          <div className="greet-icons">
+            <Icon icon="line-md:github-loop" width="0.7em" height="0.7em" style={{ color: '#329fcd' }} />
+          </div>
           <span></span>
         </a>
       ) : null}
@@ -27,7 +40,13 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-linkedin-in"></i>
+          <div className="greet-icons">
+            {illustration.animated ? (
+              <DisplayLottie animationData={linkedinlotte} />
+            ) : (
+              <i className="fab fa-linkedin-in"></i>
+            )}
+          </div>
           <span></span>
         </a>
       ) : null}
@@ -39,7 +58,9 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fas fa-envelope"></i>
+          <div className="greet-icons">
+            <FontAwesomeIcon icon={faAt} beat size="2xs" style={{ color: "#74C0FC", }} />
+          </div>
           <span></span>
         </a>
       ) : null}

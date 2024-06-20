@@ -346,7 +346,7 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
     "Discuss a project or want to hire me? My Inbox is open for all.",
   number: "+91-890-3646-404",

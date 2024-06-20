@@ -87,4 +87,24 @@
   .social-media-div {
     text-align: center;
   }
+  .greet-icons{
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .greet-icons{
+    height: 30px;
+    width: 30px;
+  }
+  .social-media-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .social-media-div a{
+    display: contents;
+  }
+
 }
