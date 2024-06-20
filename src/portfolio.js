@@ -116,7 +116,7 @@ const educationInfo = {
       cgpa: "94%"
     },
     {
-      schoolName: "BVB Matric Hr Sec School",
+      schoolName: "BVB Matric Higher Secondary School",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "High School Matriculation",
       duration: "Jun 2006 - May 2016",
