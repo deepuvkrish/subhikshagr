@@ -221,5 +221,17 @@
     padding: 15px 20px;
     margin: 0px auto;
   }
+  .header .logo {
+    display: flex;
+    justify-content:center ;
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: normal;
+    font-family: 'Agustina Regular';
+    color: rgb(255, 255, 255);
+}
   
 }

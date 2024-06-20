@@ -29,6 +29,24 @@
     justify-content: center;
     align-items: center;
 }
+.certificate-card-footer span.certificate-tag {
+  background-image:linear-gradient(45deg, #7dee8a, #9ce4f4);
+  color: $blackcolor !important;
+  font-weight: 900;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
 
 }
 
@@ -92,7 +110,8 @@
 }
 .certificate-card-footer span.certificate-tag {
   background-image:linear-gradient(45deg, #7dee8a, #9ce4f4);
-  color: $blackcolor;
+  color: $blackcolor !important;
+  font-weight: 900;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;

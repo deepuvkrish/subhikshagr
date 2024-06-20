@@ -3,7 +3,7 @@
 .education-card {
   display: flex;
   flex-direction: row;
-  background: conic-gradient(
+  background: radial-gradient(
         from 180deg at 50% 50%,
         rgba(255, 255, 255, 0.5) 0deg,
         rgba(255, 255, 255, 0) 65.63deg,
@@ -18,6 +18,9 @@
 .edu-list{
   display: flex;
   align-items: center;
+}
+.card-edu-cation{
+  display: flex;
 }
 
 .education-card:hover + .education-card-border {
@@ -99,6 +102,8 @@
   }
   .education-card-right {
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
   }
   .education-card-border {
     width: 90%;
@@ -132,6 +137,7 @@
   }
   .education-card-right {
     max-width: 100%;
+    display: flex;
   }
   .education-card-left {
     display: flex;
@@ -204,7 +210,14 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    height: 27px;
+    height: 50px;
+  }
+  .education-text-details{
+    display: flex;
+    flex-direction: column;
+  }
+  .education-text-details h5, .education-text-details p{
+    padding:10px 60px;
   }
   
 }
