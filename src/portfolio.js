@@ -57,6 +57,26 @@ const skillsSection = {
   ],
   softwareSkills: [
     {
+      skillName: "Power BI",
+      fontAwesomeClassname: "fab fa-windows"
+    },
+    {
+      skillName: "Microsoft 365",
+      fontAwesomeClassname: "fab fa-microsoft"
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
     },
@@ -68,23 +88,6 @@ const skillsSection = {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Microsoft 365",
-      fontAwesomeClassname: "fab fa-microsoft"
-
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -136,8 +139,8 @@ const techStack = {
       progressPercentage: "30%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "20%"
+      Stack: "Python",
+      progressPercentage: "30%"
     },
     {
       Stack: "SQL",
@@ -145,11 +148,15 @@ const techStack = {
     },
     {
       Stack: "Power BI",
-      progressPercentage: "50%"
+      progressPercentage: "75%"
     },
     {
       Stack: "Dynamic 365 | Supply Chain Management",
       progressPercentage: "70%"
+    },
+    {
+      Stack: "Machine Learning",
+      progressPercentage: "20%"
     },
 
   ],
@@ -248,6 +255,23 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "Data Science",
+      subtitle:
+        "Master's in Data Science and Advanced programming",
+      image: require("./assets/images/ds.png"),
+      imageAlt: "DataScience Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/in/subhiksha-rajeskannan/"
+        },
+        {
+          name: "Verify Here",
+          url: "https://www.linkedin.com/in/subhiksha-rajeskannan/"
+        },
+      ]
+    },
     {
       title: "Dynamics 365 | Functional Consultant",
       subtitle:

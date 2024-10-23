@@ -7,6 +7,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import profileds from '../../assets/images/mee.png'
 
 export default function Greeting() {
   const { isDark } = useContext(StyleContext);
@@ -52,10 +53,10 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
+            <img
               alt="subhiksha's passphoto"
-              src={ }
-              style={{ maxWidth: "65%" }}></img> */}
+              src={profileds}
+              style={{ maxWidth: "65%" }}></img>
           </div>
         </div>
       </div>
